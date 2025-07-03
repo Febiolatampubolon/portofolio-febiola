@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Febiola</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-tr from-rose-100 via-pink-200 to-violet-100 text-gray-800 font-sans min-h-screen">
+
+  <!-- Navbar -->
+  <header class="bg-pink-300 py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <h1 class="text-2xl font-bold text-purple-900">✨ Blog Febiola</h1>
+      <nav class="space-x-4 text-blue-900 font-medium">
+        <a href="#" class="hover:underline">Beranda</a>
+        <a href="#" class="hover:underline">Blog</a>
+        <a href="#" class="hover:underline">Tentang</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Konten Blog -->
+  <main class="py-12 px-4">
+    <div class="max-w-3xl mx-auto bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
+
+      <div class="bg-gradient-to-r from-purple-200 via-pink-200 to-rose-100 p-6 rounded-xl shadow mb-6">
+        <h2 class="text-3xl font-bold mb-1 text-gray-900">5 Tips UI Responsive dengan Tailwind</h2>
+        <p class="text-sm text-gray-600 mb-4">
+          Dipublikasikan oleh Febiola Tampubolon • 27 Maret 2025
+        </p>
+        <p class="text-gray-800">
+          Tailwind CSS adalah senjata utama saya dalam membuat UI modern dan responsif. Berikut beberapa tips praktikal dari pengalaman saya.
+        </p>
+      </div>
+
+      <img src="image.png" alt="Tips Responsive Tailwind" class="rounded-md mb-6">
+
+      <p class="mb-4">
+        1️⃣ <strong>Gunakan Breakpoint dengan Bijak</strong><br>
+        Tailwind menyediakan class seperti <code>sm:</code>, <code>md:</code>, <code>lg:</code>, dst. Gunakan ini untuk mengatur layout agar menyesuaikan berbagai ukuran layar.
+      </p>
+
+      <p class="mb-4">
+        2️⃣ <strong>Prioritaskan Flex dan Grid</strong><br>
+        Untuk mengatur layout responsif, manfaatkan class seperti <code>flex</code>, <code>flex-col</code>, <code>grid</code>, dan <code>gap-x-4</code>. Ini membuat struktur halaman lebih fleksibel.
+      </p>
+
+      <p class="mb-4">
+        3️⃣ <strong>Gunakan Utility Responsif</strong><br>
+        Tailwind membuat responsif jadi mudah. Misalnya, <code>text-center md:text-left</code> akan mengubah alignment tergantung ukuran layar.
+      </p>
+
+      <p class="mb-4">
+        4️⃣ <strong>Maksimalkan Container & Spacing</strong><br>
+        Gunakan <code>container</code> dan utility spacing seperti <code>px-4</code>, <code>py-8</code>, <code>mx-auto</code> agar konten tetap nyaman dibaca di semua perangkat.
+      </p>
+
+      <p class="mb-4">
+        5️⃣ <strong>Preview di Banyak Device</strong><br>
+        Selalu cek hasil desain kamu di mobile, tablet, dan desktop. Gunakan DevTools browser atau tool seperti Responsively App.
+      </p>
+
+      <blockquote class="border-l-4 border-purple-400 pl-4 italic text-gray-700 mt-6">
+        “Responsiveness bukan hanya soal ukuran layar, tapi tentang pengalaman yang konsisten di semua device.” — Febiola
+      </blockquote>
+
+    </div>
+  </main>
+
+</body>
+</html>
