@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Detail Proyek SUFI | Febiola</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900 text-white font-sans">
 
@@ -22,9 +23,29 @@
 
     <!-- Bagian Atas -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-      <!-- Gambar -->
-      <div>
-        <img src="img/sufi.png" alt="Tampilan SUFI" class="rounded-xl shadow-lg w-full object-cover"/>
+
+      <!-- Slider Gambar -->
+      <div class="swiper w-full rounded-xl shadow-lg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/TaskVisit.png" alt="Task Visit" class="w-full object-cover rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/DirectVisit.png" alt="Direct Visit" class="w-full object-cover rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/HomePage.png" alt="Home Page" class="w-full object-cover rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/ListDataMaster.png" alt="List Data Master" class="w-full object-cover rounded-xl" />
+          </div>
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <div class="swiper-button-next text-white"></div>
+        <div class="swiper-button-prev text-white"></div>
+        <!-- Pagination (opsional) -->
+        <div class="swiper-pagination mt-4"></div>
       </div>
 
       <!-- Ringkasan Proyek -->
@@ -55,7 +76,7 @@
       </div>
     </div>
 
-    <!-- Detail Lengkap -->
+    <!-- Detail Proyek -->
     <section class="px-6 py-12 bg-white text-gray-800 rounded-xl shadow-lg">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold mb-4 text-center">Detail Proyek SUFI</h2>
@@ -125,5 +146,24 @@
     </div>
   </footer>
 
+  <!-- Swiper Script di bagian paling akhir -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
 </body>
 </html>
