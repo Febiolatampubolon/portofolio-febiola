@@ -124,15 +124,29 @@
             </div>
           </div>
         </div>
-        
-        
-        <script>
-          function toggleDetail(id) {
-            const detail = document.getElementById(id);
-            detail.classList.toggle('hidden');
-          }
-        </script>
 
+   <!-- Project SUFI-One -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+  <a href="sufi-detail.html" target="_blank">
+    <img src="img/sufi.jpeg" alt="SUFI Project" class="w-full h-48 object-cover cursor-pointer">
+  </a>
+  <div class="p-6 text-left">
+    <h3 class="text-xl font-semibold mb-2 text-white">SUFI</h3>
+    <p class="text-gray-400 text-sm">
+      Aplikasi manajemen inventaris barang dengan fitur peminjaman, pengembalian, dan pelaporan yang terintegrasi.
+    </p>
+    <button onclick="toggleDetail('sufiDetail')" class="mt-3 text-blue-400 hover:underline text-sm">
+      Selengkapnya
+    </button>
+    <div id="sufiDetail" class="mt-3 text-gray-400 text-sm hidden">
+      <p><strong>One Module Smile:</strong> Merancang dan mengembangkan modul "One Module Smile" untuk fitur peminjaman dan pengembalian barang yang intuitif dan efisien.</p>
+      <p class="mt-1"><strong>Database Administrator:</strong> Mengelola database inventaris, memastikan integritas data, dan mengoptimalkan kinerja query.</p>
+      <p class="mt-1"><strong>UI/UX Designer:</strong> Merancang antarmuka pengguna yang menarik dan pengalaman pengguna yang mulus untuk seluruh aplikasi.</p>
+    </div>
+  </div>
+</div>
+        
+     
 <!-- Project SITA -->
 <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
   <a href="sita-detail.html" target="_blank">
@@ -154,7 +168,7 @@
   </div>
 </div>
 
-
+  
 <script>
   function toggleDetail(id) {
     const detail = document.getElementById(id);
