@@ -23,7 +23,6 @@
       <!-- Menu Desktop -->
       <div class="hidden md:flex space-x-6 text-sm font-medium text-white">
         <a href="#about" class="hover:text-teal-400">Tentang Saya</a>
-        <a href="#projects" class="hover:text-teal-400">Portofolio</a>
         <a href="#contact" class="hover:text-teal-400">Kontak</a>
       </div>
 
@@ -37,54 +36,41 @@
   <div id="mobile-menu" class="md:hidden fixed top-16 left-0 w-full bg-[#0f172a] border-t border-slate-700 hidden z-40">
     <div class="flex flex-col items-center space-y-4 py-4">
       <a href="#about" class="hover:text-teal-400">Tentang Saya</a>
-      <a href="#projects" class="hover:text-teal-400">Portofolio</a>
       <a href="#contact" class="hover:text-teal-400">Kontak</a>
     </div>
-  </div>
-
-  <!-- Hero Section with Background Image -->
-  <section class="relative bg-cover bg-center bg-no-repeat text-white pt-32 pb-20"
-    style="background-image: url('img/bg-hero.jpg');">
-    <!-- Overlay agar teks tetap terbaca -->
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-
-    <div class="relative max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
-
-      <!-- Text Area -->
-      <div class="flex-1 text-center lg:text-left z-10">
-        <p class="text-teal-400 text-lg mb-3">Halo semua, saya</p>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-3">Febiola Tampubolon</h1>
-        <h2 class="text-2xl md:text-3xl text-slate-200 font-semibold mb-6">Frontend Developer</h2>
-        <p class="text-slate-300 mb-8 max-w-lg">
-          An active sixth-semester student majoring in Informatics at the Del Tech Institute
-        </p>
-        <a href="#contact" class="inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">
-          Hubungi Saya
-        </a>
-      </div>
-
-      <!-- Profile Image -->
-      <div class="flex-1 flex justify-center z-10">
-        <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-[6px] border-yellow-400 shadow-[0_0_30px_rgba(255,215,0,0.4)] bg-white">
-          <img src="img/Foto.png" alt="Foto Febiola" class="w-full h-full object-cover" />
+  </div><!-- Hero Section Minimalist -->
+<section class="bg-[#0f172a] text-white min-h-screen flex items-center justify-center px-6">
+  <div class="max-w-5xl w-full border border-slate-600 rounded-md p-8">
+    <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+      
+      <!-- Foto Profil -->
+      <div class="text-center">
+        <img src="img/Foto.png" alt="Foto Gahasa" class="w-48 h-60 object-cover rounded-md shadow-md" />
+        <h3 class="mt-4 font-bold text-lg">Personalize Theme</h3>
+        <div class="flex justify-center gap-4 mt-2">
+          <div class="w-6 h-6 rounded-full bg-white border"></div>
+          <div class="w-6 h-6 rounded-full bg-[#0f172a] border"></div>
+          <div class="w-6 h-6 rounded-full bg-[#7b8a6d] border"></div>
+          <div class="w-6 h-6 rounded-full bg-[#69445e] border"></div>
         </div>
+        <p class="text-sm text-slate-400 italic mt-2">
+          *Theme settings will be saved for your next visit
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- Tentang Saya -->
-  <section id="about" class="py-24 bg-gradient-to-b from-white to-slate-100">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold text-slate-800 mb-6">Tentang Saya</h2>
-      <div class="mx-auto w-24 h-1 bg-teal-500 rounded-full mb-8"></div>
-      <p class="text-lg text-slate-600 leading-relaxed">
-        Saya adalah seorang mahasiswa <span class="font-semibold text-teal-600">Informatika</span> yang memiliki semangat tinggi dalam
-        pengembangan <span class="font-semibold text-teal-600">Frontend</span> dan <span class="font-semibold text-teal-600">Mobile App</span>.
-        Saya suka merancang antarmuka yang modern, bersih, dan intuitif. Saat ini, saya sedang mendalami teknologi seperti
-        <span class="italic text-slate-700">Android Jetpack Compose</span> dan <span class="italic text-slate-700">React</span> untuk menciptakan proyek-proyek menarik dan berdampak.
-      </p>
+      <!-- Deskripsi -->
+      <div class="bg-[#111827] p-6 rounded-md w-full md:w-1/2">
+        <h2 class="text-2xl font-extrabold mb-3">What I Do</h2>
+        <p class="text-slate-300 font-mono leading-relaxed">
+          I am an IT Enthusiast that currently work as Software Engineer.
+          I have a huge interest in IT field especially in application & website development.
+        </p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Project Section -->
   <section id="portfolio" class="bg-slate-900 text-white py-20 px-6">
