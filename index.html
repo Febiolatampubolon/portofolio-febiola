@@ -34,16 +34,17 @@
   <nav class="fixed top-0 left-0 w-full bg-[#0f172a] z-50 border-b border-slate-700">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-      <!-- Logo + Nama -->
+      <!-- Nama di Navbar (Febiola Tampubolon) -->
+      <!-- Logo dan nama "Del" telah dihapus sesuai permintaan -->
       <a href="#" class="flex items-center space-x-3">
-        <img src="img/Logo.jpg" alt="Logo DEL" class="w-10 h-10 object-contain" />
-        <span class="text-white text-xl font-bold">febiola.tampubolon</span>
+        <span class="text-white text-xl font-bold">Febiola Tampubolon</span>
       </a>
 
       <!-- Menu Desktop -->
       <div class="hidden md:flex space-x-6 text-sm font-medium text-white">
         <a href="#about" class="hover:text-teal-400">Tentang Saya</a>
-
+        <a href="#portfolio" class="hover:text-teal-400">Project</a>
+        <a href="#blog" class="hover:text-teal-400">Blog</a>
         <a href="#contact" class="hover:text-teal-400">Kontak</a>
       </div>
 
@@ -57,17 +58,21 @@
   <div id="mobile-menu" class="md:hidden fixed top-16 left-0 w-full bg-[#0f172a] border-t border-slate-700 hidden z-40">
     <div class="flex flex-col items-center space-y-4 py-4">
       <a href="#about" class="hover:text-teal-400">Tentang Saya</a>
+      <a href="#portfolio" class="hover:text-teal-400">Project</a>
+      <a href="#blog" class="hover:text-teal-400">Blog</a>
       <a href="#contact" class="hover:text-teal-400">Kontak</a>
     </div>
   </div>
 
- <!-- Hero Section Minimalist -->
-<section class="bg-[#0f172a] text-white min-h-screen flex items-center justify-center px-6">
-  <div class="max-w-5xl w-full border border-slate-600 rounded-md p-8 hero-card">
-    <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+  <!-- Hero Section Minimalist -->
+  <section class="bg-[#0f172a] text-white min-h-screen flex items-center justify-center px-6">
+    <div class="max-w-5xl w-full border border-slate-600 rounded-md p-8 hero-card">
+      <!-- Teks "Hai, Saya Febiola Tampubolon" ditambahkan di sini -->
+      <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-8 text-teal-400">Hai, Saya Febiola Tampubolon</h1>
       
-      <!-- Foto Profil -->
-      
+      <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+
+        <!-- Foto Profil -->
         <div class="text-center md:w-1/3">
           <img src="img/me.jpg" alt="Foto Febiola" class="w-48 h-60 object-cover rounded-md shadow-md mx-auto" />
           <h3 class="mt-4 font-bold text-lg">Personalize Theme</h3>
@@ -82,20 +87,19 @@
           </p>
         </div>
 
-     <div class="bg-[#111827] p-6 rounded-md w-full md:w-2/3 border border-slate-600 what-i-do-card">
-  <h2 class="text-2xl font-extrabold mb-3">What I Do</h2>
-  <p class="text-slate-300 font-mono leading-relaxed">
-    I'm a Mobile Developer specializing in building high-quality, cross-platform applications using Flutter.  
-    I’m passionate about creating smooth user experiences, writing clean and maintainable code, and turning ideas into functional and beautiful apps.
-  </p>
-</div>
-
+        <div class="bg-[#111827] p-6 rounded-md w-full md:w-2/3 border border-slate-600 what-i-do-card">
+          <h2 class="text-2xl font-extrabold mb-3">What I Do</h2>
+          <p class="text-slate-300 font-mono leading-relaxed">
+            I'm a Mobile Developer specializing in building high-quality, cross-platform applications using Flutter.
+            I’m passionate about creating smooth user experiences, writing clean and maintainable code, and turning ideas into functional and beautiful apps.
+          </p>
+        </div>
 
       </div>
     </div>
-</section>
+  </section>
 
-<section class="py-20 px-6 transition-colors duration-300">
+  <section id="about" class="py-20 px-6 transition-colors duration-300">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
       <div class="md:w-1/2">
         <h2 class="text-3xl font-bold mb-4">More about me</h2>
@@ -113,21 +117,22 @@
           <div>CSS</div>
           <div>Java</div>
           <div>JavaScript</div>
-           <div>Python</div> 
+          <div>Python</div>
           <div>Photography</div>
           <div>PHP</div>
           <div>Videography</div>
           <div>Laravel</div>
         </div>
-     <a href="https://drive.google.com/file/d/1iJDeEgP8MXcbPzTBfvi-MXYrIACXHJZO/view?usp=sharing" target="_blank" class="mt-8 inline-block bg-transparent border border-white text-white py-2 px-6 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
-  Download Resume
-</a>
-</div>
+        <a href="https://drive.google.com/file/d/1iJDeEgP8MXcbPzTBfvi-MXYrIACXHJZO/view?usp=sharing" target="_blank" class="mt-8 inline-block bg-transparent border border-white text-white py-2 px-6 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
+          Download Resume
+        </a>
+      </div>
 
-<div class="md:w-1/2 flex flex-col items-center">
-  <img src="img/landscape.jpg" alt="Landscape" class="w-full h-auto object-cover rounded-lg shadow-lg mb-8" />
-</div>
-
+      <div class="md:w-1/2 flex flex-col items-center">
+        <img src="img/landscape.jpg" alt="Landscape" class="w-full h-auto object-cover rounded-lg shadow-lg mb-8" />
+      </div>
+    </div>
+  </section>
 
 
   <!-- Project Section -->
@@ -145,7 +150,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         <!-- Project SIMBA -->
-       <div class="project-card bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+        <div class="project-card bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
 
           <a href="simba-detail.html" target="_blank">
             <img src="img/simba.jpeg" alt="SIMBA Project" class="w-full h-48 object-cover cursor-pointer">
@@ -221,71 +226,69 @@
     }
   </script>
 
+  <section id="blog" class="bg-slate-900 text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <!-- Subtitle -->
+      <p class="text-teal-400 text-sm font-semibold mb-2">Blog</p>
+
+      <!-- Title -->
+      <h2 class="text-4xl font-bold mb-4">Tulisan Terkini</h2>
+
+      <!-- Deskripsi -->
+      <p class="text-gray-400 mb-12 max-w-2xl mx-auto">
+        Kumpulan tulisan saya yang mendokumentasikan perjalanan, pengalaman, dan tips di dunia pengembangan web dan mobile.
+      </p>
+
+      <!-- Card Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Blog Card 1 -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="img/blog-frontend.jpg" alt="Perjalanan Front-End Developer" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-lg font-semibold mb-2">Perjalanan Menjadi Front-End Developer</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Dari belajar HTML dan CSS hingga membuat portfolio sendiri. Cerita perjuangan dan proses saya menjadi seorang Front-End Developer.
+            </p>
+            <a href="blog-frontend.html" class="inline-block px-4 py-2 bg-teal-500 text-white text-sm rounded-lg hover:bg-teal-600">
+              Baca Selengkapnya
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="img/blog-tailwind.jpg" alt="Tips Responsive Tailwind CSS" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-lg font-semibold mb-2 text-white">5 Tips UI Responsive dengan Tailwind</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Tailwind CSS adalah senjata utama saya dalam membuat UI modern dan responsif. Berikut beberapa tips praktikal dari pengalaman saya.
+            </p>
+            <a href="blog-responsive-tailwind.html" class="inline-block px-4 py-2 bg-teal-500 text-white text-sm rounded-lg hover:bg-teal-600">
+              Baca Selengkapnya
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="img/blog-sita.jpg" alt="Membangun Sistem SITA" class="w-full h-48 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-lg font-semibold mb-2">Membangun Sistem SITA dari Nol</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Pengalaman saya sebagai Front-End Developer dalam proyek sistem informasi tingkat akhir di kampus — SITA. Stack, fitur, dan tantangannya.
+            </p>
+            <a href="blog-sita.html" class="inline-block px-4 py-2 bg-teal-500 text-white text-sm rounded-lg hover:bg-teal-600">
+              Baca Selengkapnya
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
-<section id="blog" class="bg-slate-900 text-white py-20 px-6">
-  <div class="max-w-6xl mx-auto text-center">
-    <!-- Subtitle -->
-    <p class="text-teal-400 text-sm font-semibold mb-2">Blog</p>
-
-    <!-- Title -->
-    <h2 class="text-4xl font-bold mb-4">Tulisan Terkini</h2>
-
-    <!-- Deskripsi -->
-    <p class="text-gray-400 mb-12 max-w-2xl mx-auto">
-      Kumpulan tulisan saya yang mendokumentasikan perjalanan, pengalaman, dan tips di dunia pengembangan web dan mobile.
-    </p>
-
-    <!-- Card Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      <!-- Blog Card 1 -->
-      <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="img/blog-frontend.jpg" alt="Perjalanan Front-End Developer" class="w-full h-48 object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-lg font-semibold mb-2">Perjalanan Menjadi Front-End Developer</h3>
-          <p class="text-gray-400 text-sm mb-4">
-            Dari belajar HTML dan CSS hingga membuat portfolio sendiri. Cerita perjuangan dan proses saya menjadi seorang Front-End Developer.
-          </p>
-          <a href="blog-frontend.html" class="inline-block px-4 py-2 bg-teal-500 text-white text-sm rounded-lg hover:bg-teal-600">
-            Baca Selengkapnya
-          </a>
-        </div>
-      </div>
-
-      <!-- Blog Card 2 -->
-      <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="img/blog-tailwind.jpg" alt="Tips Responsive Tailwind CSS" class="w-full h-48 object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-lg font-semibold mb-2 text-white">5 Tips UI Responsive dengan Tailwind</h3>
-          <p class="text-gray-400 text-sm mb-4">
-            Tailwind CSS adalah senjata utama saya dalam membuat UI modern dan responsif. Berikut beberapa tips praktikal dari pengalaman saya.
-          </p>
-          <a href="blog-responsive-tailwind.html" class="inline-block px-4 py-2 bg-teal-500 text-white text-sm rounded-lg hover:bg-teal-600">
-            Baca Selengkapnya
-          </a>
-        </div>
-      </div>
-
-      <!-- Blog Card 3 -->
-      <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-        <img src="img/blog-sita.jpg" alt="Membangun Sistem SITA" class="w-full h-48 object-cover">
-        <div class="p-6 text-left">
-          <h3 class="text-lg font-semibold mb-2">Membangun Sistem SITA dari Nol</h3>
-          <p class="text-gray-400 text-sm mb-4">
-            Pengalaman saya sebagai Front-End Developer dalam proyek sistem informasi tingkat akhir di kampus — SITA. Stack, fitur, dan tantangannya.
-          </p>
-          <a href="blog-sita.html" class="inline-block px-4 py-2 bg-teal-500 text-white text-sm rounded-lg hover:bg-teal-600">
-            Baca Selengkapnya
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
- <script>
+  <script>
     document.addEventListener('DOMContentLoaded', () => {
       const themePickers = document.querySelectorAll('.theme-picker');
       const body = document.body;
@@ -377,46 +380,46 @@
         body.style.color = palette.textColor;
         navbar.querySelector('span').style.color = palette.textColor; // Nama di navbar
         document.querySelectorAll('a').forEach(link => {
-            if (!link.classList.contains('hover:text-teal-400') && !link.classList.contains('text-teal-400')) {
-                link.style.color = palette.textColor; // Untuk link yang tidak punya warna spesifik
-            }
+          if (!link.classList.contains('hover:text-teal-400') && !link.classList.contains('text-teal-400')) {
+            link.style.color = palette.textColor; // Untuk link yang tidak punya warna spesifik
+          }
         });
         document.querySelectorAll('h1, h2, h3').forEach(heading => {
-            heading.style.color = palette.textColor;
+          heading.style.color = palette.textColor;
         });
         document.querySelectorAll('p').forEach(p => {
-            if (!p.classList.contains('text-slate-400')) { // Jangan ubah teks italic kecil
-                p.style.color = palette.textColor;
-            }
+          if (!p.classList.contains('text-slate-400')) { // Jangan ubah teks italic kecil
+            p.style.color = palette.textColor;
+          }
         });
         document.querySelectorAll('.text-gray-400').forEach(p => {
-             if (!p.closest('.theme-picker')) { // Jangan ubah teks italic kecil pada theme picker
-                 p.style.color = palette.textColor;
-             }
-         });
+          if (!p.closest('.theme-picker')) { // Jangan ubah teks italic kecil pada theme picker
+            p.style.color = palette.textColor;
+          }
+        });
 
 
         // Update link colors for dynamic changes (optional, adjust as needed)
         document.querySelectorAll('a.hover\\:text-teal-400').forEach(link => {
-            link.style.color = palette.textColor; // Set warna dasar link navigasi
-            link.onmouseover = () => link.style.color = 'teal'; // Kembali ke teal saat hover
-            link.onmouseout = () => link.style.color = palette.textColor; // Kembali ke warna tema saat mouse out
+          link.style.color = palette.textColor; // Set warna dasar link navigasi
+          link.onmouseover = () => link.style.color = 'teal'; // Kembali ke teal saat hover
+          link.onmouseout = () => link.style.color = palette.textColor; // Kembali ke warna tema saat mouse out
         });
         document.querySelectorAll('.text-teal-400').forEach(link => {
-            link.style.color = 'teal'; // Memastikan link seperti "Visit Website" tetap teal
+          link.style.color = 'teal'; // Memastikan link seperti "Visit Website" tetap teal
         });
 
         document.querySelectorAll('.border.border-white').forEach(button => {
-            button.style.borderColor = palette.textColor;
+          button.style.borderColor = palette.textColor;
+          button.style.color = palette.textColor;
+          button.onmouseover = () => {
+            button.style.backgroundColor = palette.textColor;
+            button.style.color = palette.bg;
+          };
+          button.onmouseout = () => {
+            button.style.backgroundColor = 'transparent';
             button.style.color = palette.textColor;
-            button.onmouseover = () => {
-                button.style.backgroundColor = palette.textColor;
-                button.style.color = palette.bg;
-            };
-            button.onmouseout = () => {
-                button.style.backgroundColor = 'transparent';
-                button.style.color = palette.textColor;
-            };
+          };
         });
 
       }
@@ -440,94 +443,94 @@
     });
   </script>
 
-<section id="contact" class="bg-slate-900 text-white py-20 px-6">
-  <div class="max-w-xl mx-auto text-center">
-    <!-- Subtitle -->
-    <p class="text-teal-400 text-sm font-semibold mb-2">Contact</p>
+  <section id="contact" class="bg-slate-900 text-white py-20 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <!-- Subtitle -->
+      <p class="text-teal-400 text-sm font-semibold mb-2">Contact</p>
 
-    <!-- Title -->
-    <h2 class="text-4xl font-bold mb-4">Hubungi Saya</h2>
+      <!-- Title -->
+      <h2 class="text-4xl font-bold mb-4">Hubungi Saya</h2>
 
-    <!-- Deskripsi -->
-    <p class="text-gray-400 mb-10"></p>
+      <!-- Deskripsi -->
+      <p class="text-gray-400 mb-10"></p>
 
-    <!-- Contact Form -->
-    <form class="space-y-6">
-      <div class="text-left">
-        <label for="nama" class="block text-teal-400 mb-1">Nama</label>
-        <input type="text" id="nama" name="nama" class="w-full px-4 py-2 rounded-md bg-slate-100 text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
-      </div>
-      <div class="text-left">
-        <label for="email" class="block text-teal-400 mb-1">Email</label>
-        <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-slate-100 text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
-      </div>
-      <div class="text-left">
-        <label for="pesan" class="block text-teal-400 mb-1">Pesan</label>
-        <textarea id="pesan" name="pesan" rows="5" class="w-full px-4 py-2 rounded-md bg-slate-100 text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
-      </div>
-      <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 rounded-md transition duration-300">
-        Kirim
-      </button>
-    </form>
-  </div>
-</section>
-
-<!-- Kontak -->
-<section id="contact-form" class="bg-slate-900 text-white py-20 px-6">
-  <div class="container mx-auto px-6 md:w-1/2 text-center">
-    <h2 class="text-4xl font-bold text-slate-800 mb-4">Kontak</h2>
-    <div class="mx-auto w-24 h-1 bg-teal-500 rounded-full mb-6"></div>
-    <p class="text-lg text-slate-600 mb-6">
-      Ingin kerja bareng atau diskusi? Silakan hubungi saya!
-    </p>
-
-    <!-- Email Link -->
-    <a href="mailto:tampubolonfebiola@gmail.com" class="inline-block text-blue-600 hover:text-blue-800 text-lg font-semibold transition duration-300 mb-2">
-      📧 tampubolonfebiola@gmail.com
-    </a>
-
-    <!-- Lokasi -->
-    <p class="text-gray-600 mt-2">📍 Institut Teknologi Del, Toba</p>
-  </div>
-</section>
-
-
-<!-- Footer -->
-<footer id="footer" class="bg-slate-800 text-gray-400 py-6 mt-12">
-  <div class="container mx-auto px-4">
-    <!-- Ikon Sosial Media -->
-    <div class="flex flex-wrap justify-center gap-6 mb-4 text-2xl">
-      <!-- GitHub -->
-      <a href="https://github.com/Febiolatampubolon" target="_blank" class="hover:text-white transition">
-        <i class="fab fa-github"></i>
-      </a>
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/febiolatampubolon" target="_blank" class="hover:text-white transition">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/febiola_tampubolon" target="_blank" class="hover:text-white transition">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <!-- CV -->
-      <a href="https://drive.google.com/uc?export=view&id=12jmXQ5eKVpaaZK1TJuRyjm76mDbYDWSY" target="_blank" class="hover:text-white transition" title="Lihat CV">
-        <i class="fas fa-file-alt"></i>
-      </a>
-      <!-- Email -->
-      <a href="mailto:tampubolonfebiola@gmail.com" class="hover:text-white transition" title="Kirim Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <!-- WhatsApp -->
-      <a href="https://wa.me/6282261175885" target="_blank" class="hover:text-white transition" title="Chat via WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
+      <!-- Contact Form -->
+      <form class="space-y-6">
+        <div class="text-left">
+          <label for="nama" class="block text-teal-400 mb-1">Nama</label>
+          <input type="text" id="nama" name="nama" class="w-full px-4 py-2 rounded-md bg-slate-100 text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
+        </div>
+        <div class="text-left">
+          <label for="email" class="block text-teal-400 mb-1">Email</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md bg-slate-100 text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500">
+        </div>
+        <div class="text-left">
+          <label for="pesan" class="block text-teal-400 mb-1">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" class="w-full px-4 py-2 rounded-md bg-slate-100 text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 rounded-md transition duration-300">
+          Kirim
+        </button>
+      </form>
     </div>
+  </section>
 
-    <!-- Copyright -->
-    <p class="text-center text-sm">© 2025 Febiola Tampubolon.</p>
-  </div>
-</footer>
+  <!-- Kontak -->
+  <section id="contact-form" class="bg-slate-900 text-white py-20 px-6">
+    <div class="container mx-auto px-6 md:w-1/2 text-center">
+      <h2 class="text-4xl font-bold text-slate-800 mb-4">Kontak</h2>
+      <div class="mx-auto w-24 h-1 bg-teal-500 rounded-full mb-6"></div>
+      <p class="text-lg text-slate-600 mb-6">
+        Ingin kerja bareng atau diskusi? Silakan hubungi saya!
+      </p>
+
+      <!-- Email Link -->
+      <a href="mailto:tampubolonfebiola@gmail.com" class="inline-block text-blue-600 hover:text-blue-800 text-lg font-semibold transition duration-300 mb-2">
+        📧 tampubolonfebiola@gmail.com
+      </a>
+
+      <!-- Lokasi -->
+      <p class="text-gray-600 mt-2">📍 Institut Teknologi Del, Toba</p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-slate-800 text-gray-400 py-6 mt-12">
+    <div class="container mx-auto px-4">
+      <!-- Ikon Sosial Media -->
+      <div class="flex flex-wrap justify-center gap-6 mb-4 text-2xl">
+        <!-- GitHub -->
+        <a href="https://github.com/Febiolatampubolon" target="_blank" class="hover:text-white transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/febiolatampubolon" target="_blank" class="hover:text-white transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/febiola_tampubolon" target="_blank" class="hover:text-white transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- CV -->
+        <a href="https://drive.google.com/uc?export=view&id=12jmXQ5eKVpaaZK1TJuRyjm76mDbYDWSY" target="_blank" class="hover:text-white transition" title="Lihat CV">
+          <i class="fas fa-file-alt"></i>
+        </a>
+        <!-- Email -->
+        <a href="mailto:tampubolonfebiola@gmail.com" class="hover:text-white transition" title="Kirim Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6282261175885" target="_blank" class="hover:text-white transition" title="Chat via WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-center text-sm">© 2025 Febiola Tampubolon.</p>
+    </div>
+  </footer>
 
 </body>
-</html>
 
+</html>
