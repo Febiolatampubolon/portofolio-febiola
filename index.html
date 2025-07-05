@@ -63,7 +63,7 @@
 
  <!-- Hero Section Minimalist -->
 <section class="bg-[#0f172a] text-white min-h-screen flex items-center justify-center px-6">
-  <div class="max-w-5xl w-full border border-slate-600 rounded-md p-8">
+  <div class="max-w-5xl w-full border border-slate-600 rounded-md p-8 hero-card">
     <div class="flex flex-col md:flex-row items-center justify-around gap-8">
       
       <!-- Foto Profil -->
@@ -83,13 +83,14 @@
           </p>
         </div>
 
-        <div class="bg-[#111827] p-6 rounded-md w-full md:w-2/3 border border-slate-600 transition-colors duration-300">
-          <h2 class="text-2xl font-extrabold mb-3">What I Do</h2>
-          <p class="text-slate-300 font-mono leading-relaxed">
-            I am an IT Enthusiast that currently work as Software Engineer.
-            I have a huge interest in IT field especially in application & website development.
-          </p>
-        </div>
+     <div class="bg-[#111827] p-6 rounded-md w-full md:w-2/3 border border-slate-600 what-i-do-card">
+  <h2 class="text-2xl font-extrabold mb-3">What I Do</h2>
+  <p class="text-slate-300 font-mono leading-relaxed">
+    I'm a Mobile Developer specializing in building high-quality, cross-platform applications using Flutter.  
+    I’m passionate about creating smooth user experiences, writing clean and maintainable code, and turning ideas into functional and beautiful apps.
+  </p>
+</div>
+
 
       </div>
     </div>
@@ -292,8 +293,8 @@
       const navbar = document.querySelector('nav');
       const sections = document.querySelectorAll('section');
       const footer = document.getElementById('footer');
-      const heroCard = document.querySelector('.max-w-5xl');
-      const whatIDoCard = document.querySelector('.bg-[#111827]');
+      const heroCard = document.querySelector('.hero-card');
+      const whatIDoCard = document.querySelector('.what-i-do-card');
       const projectCards = document.querySelectorAll('.project-card'); // Menggunakan class baru
 
       // Definisikan palet warna untuk setiap tema
