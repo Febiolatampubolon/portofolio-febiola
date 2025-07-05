@@ -35,7 +35,6 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- Nama di Navbar (Febiola Tampubolon) -->
-      <!-- Logo dan nama "Del" telah dihapus sesuai permintaan -->
       <a href="#" class="flex items-center space-x-3">
         <span class="text-white text-xl font-bold">Febiola Tampubolon</span>
       </a>
@@ -99,37 +98,55 @@
     </div>
   </section>
 
-  <section id="about" class="py-20 px-6 transition-colors duration-300">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
-      <div class="md:w-1/2">
-        <h2 class="text-3xl font-bold mb-4">More about me</h2>
-        <p class="text-slate-300 mb-6 leading-relaxed">
-          I'm using several programming languages such as Java, PHP, JavaScript, and SQL to build apps and websites.
-        </p>
-        <p class="text-slate-300 mb-8 leading-relaxed">
-          I'm able to work independently or in a team, responsible, and learn new things quickly.
-        </p>
+  <!-- About Section - Updated for Elegance -->
+  <section id="about" class="py-20 px-6 transition-colors duration-300 bg-slate-900">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-stretch justify-between gap-12">
+      
+      <!-- Left Column: More About Me & Top Expertise -->
+      <div class="md:w-1/2 flex flex-col">
+        <div class="bg-slate-800 p-8 rounded-lg shadow-xl border border-slate-700 flex-grow about-card">
+          <h2 class="text-3xl font-bold mb-4 text-white">More about me</h2>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            I'm using several programming languages such as Java, PHP, JavaScript, and SQL to build apps and websites.
+          </p>
+          <p class="text-slate-300 mb-8 leading-relaxed">
+            I'm able to work independently or in a team, responsible, and learn new things quickly.
+          </p>
 
-        <h2 class="text-3xl font-bold mb-4">Top Expertise</h2>
-        <div class="grid grid-cols-2 gap-4 text-slate-300 text-lg">
-          <div>HTML</div>
-          <div>SQL</div>
-          <div>CSS</div>
-          <div>Java</div>
-          <div>JavaScript</div>
-          <div>Python</div>
-          <div>Photography</div>
-          <div>PHP</div>
-          <div>Videography</div>
-          <div>Laravel</div>
+          <!-- Horizontal Separator -->
+          <hr class="border-t border-slate-600 my-8">
+
+          <h2 class="text-3xl font-bold mb-4 text-white">Top Expertise</h2>
+          <p class="text-slate-300 mb-6 leading-relaxed">
+            I also have a good knowledge using Java & PHP framework such as Spring Boot & Laravel.
+          </p>
+          <div class="grid grid-cols-2 gap-x-8 gap-y-4 text-slate-300 text-lg">
+            <div class="flex items-center gap-2"><i class="fas fa-code text-teal-400"></i> HTML</div>
+            <div class="flex items-center gap-2"><i class="fas fa-database text-teal-400"></i> SQL</div>
+            <div class="flex items-center gap-2"><i class="fas fa-code text-teal-400"></i> CSS</div>
+            <div class="flex items-center gap-2"><i class="fab fa-java text-teal-400"></i> Java</div>
+            <div class="flex items-center gap-2"><i class="fab fa-js-square text-teal-400"></i> JavaScript</div>
+            <div class="flex items-center gap-2"><i class="fab fa-python text-teal-400"></i> Python</div>
+            <div class="flex items-center gap-2"><i class="fas fa-camera-retro text-teal-400"></i> Photography</div>
+            <div class="flex items-center gap-2"><i class="fab fa-php text-teal-400"></i> PHP</div>
+            <div class="flex items-center gap-2"><i class="fas fa-video text-teal-400"></i> Videography</div>
+            <div class="flex items-center gap-2"><i class="fas fa-code text-teal-400"></i> Laravel</div>
+          </div>
+          <a href="https://drive.google.com/file/d/1iJDeEgP8MXcbPzTBfvi-MXYrIACXHJZO/view?usp=sharing" target="_blank" class="mt-8 inline-block bg-transparent border border-white text-white py-2 px-6 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
+            Download Resume
+          </a>
         </div>
-        <a href="https://drive.google.com/file/d/1iJDeEgP8MXcbPzTBfvi-MXYrIACXHJZO/view?usp=sharing" target="_blank" class="mt-8 inline-block bg-transparent border border-white text-white py-2 px-6 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
-          Download Resume
-        </a>
       </div>
 
-      <div class="md:w-1/2 flex flex-col items-center">
-        <img src="img/landscape.jpg" alt="Landscape" class="w-full h-auto object-cover rounded-lg shadow-lg mb-8" />
+      <!-- Right Column: Image and Linktree -->
+      <div class="md:w-1/2 flex flex-col items-center justify-start gap-8">
+        <div class="bg-slate-800 p-6 rounded-lg shadow-xl border border-slate-700 w-full text-center image-card">
+          <img src="img/landscape.jpg" alt="Landscape" class="w-full h-auto object-cover rounded-lg shadow-lg mb-6" />
+          <h3 class="text-xl font-bold mb-4 text-white">Find me on Linktree below</h3>
+          <a href="https://linktr.ee/gaganapurba" target="_blank" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 text-lg">
+            linktr.ee/gaganapurba
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -297,46 +314,51 @@
       const footer = document.getElementById('footer');
       const heroCard = document.querySelector('.hero-card');
       const whatIDoCard = document.querySelector('.what-i-do-card');
-      const projectCards = document.querySelectorAll('.project-card'); // Menggunakan class baru
+      const projectCards = document.querySelectorAll('.project-card');
+      const aboutCard = document.querySelector('.about-card'); // New: About card
+      const imageCard = document.querySelector('.image-card'); // New: Image card
 
       // Definisikan palet warna untuk setiap tema
-      // Anda bisa menyesuaikan warna ini agar sesuai dengan preferensi 'elegan' Anda
       const themePalettes = {
         '#0f172a': { // Tema default (dark blue)
           bg: '#0f172a',
           cardBg1: '#1f2937', // Untuk heroCard, projectCard
           cardBg2: '#111827', // Untuk whatIDoCard
+          cardBg3: '#1e293b', // New: For aboutCard and imageCard
           borderColor: '#475569',
           textColor: 'white',
-          // Anda bisa menambahkan warna lain di sini (misal: text-teal-400) jika ingin berubah juga
         },
         'white': { // Tema putih
-          bg: '#f8fafc', // Hampir putih
-          cardBg1: '#ffffff', // Putih terang
-          cardBg2: '#f1f5f9', // Abu-abu muda
+          bg: '#f8fafc',
+          cardBg1: '#ffffff',
+          cardBg2: '#f1f5f9',
+          cardBg3: '#e2e8f0', // New: For aboutCard and imageCard
           borderColor: '#cbd5e1',
-          textColor: '#1e293b', // Dark slate untuk teks
+          textColor: '#1e293b',
         },
         '#7b8a6d': { // Tema hijau zaitun
           bg: '#7b8a6d',
           cardBg1: '#94a887',
           cardBg2: '#879e7a',
+          cardBg3: '#819476', // New: For aboutCard and imageCard
           borderColor: '#b6c2ac',
-          textColor: '#f8fafc', // Teks putih atau off-white
+          textColor: '#f8fafc',
         },
         '#69445e': { // Tema ungu tua
           bg: '#69445e',
           cardBg1: '#865e77',
           cardBg2: '#7a516e',
+          cardBg3: '#724c65', // New: For aboutCard and imageCard
           borderColor: '#a37190',
           textColor: '#f8fafc',
         },
-        '#a382a8': { // Tema lavender/ungu muda (warna ke-5)
+        '#a382a8': { // Tema lavender/ungu muda
           bg: '#a382a8',
           cardBg1: '#c09ec2',
           cardBg2: '#b291b5',
+          cardBg3: '#b697bb', // New: For aboutCard and imageCard
           borderColor: '#dfc7e0',
-          textColor: '#1e293b', // Teks dark slate
+          textColor: '#1e293b',
         }
       };
 
@@ -361,10 +383,12 @@
         // Set background colors for specific cards
         heroCard.style.backgroundColor = palette.cardBg1;
         whatIDoCard.style.backgroundColor = palette.cardBg2;
+        if (aboutCard) aboutCard.style.backgroundColor = palette.cardBg3; // Apply to new about card
+        if (imageCard) imageCard.style.backgroundColor = palette.cardBg3; // Apply to new image card
 
         projectCards.forEach(card => {
           card.style.backgroundColor = palette.cardBg1;
-          card.style.borderColor = palette.borderColor; // Ubah warna border juga
+          card.style.borderColor = palette.borderColor;
         });
 
         // Set border colors for general elements
@@ -372,42 +396,58 @@
         heroCard.style.borderColor = palette.borderColor;
         whatIDoCard.style.borderColor = palette.borderColor;
         footer.style.borderColor = palette.borderColor;
+        if (aboutCard) aboutCard.style.borderColor = palette.borderColor; // Apply to new about card
+        if (imageCard) imageCard.style.borderColor = palette.borderColor; // Apply to new image card
+        document.querySelectorAll('hr').forEach(hr => { // Apply to new hr
+          hr.style.borderColor = palette.borderColor;
+        });
 
-        // Set text colors (opsional, tergantung seberapa banyak yang ingin diubah)
-        // Jika Anda ingin mengubah warna teks global, Anda bisa menambahkan kelas Tailwind
-        // yang relevan pada <body> berdasarkan tema yang dipilih.
-        // Untuk saat ini, kita biarkan text-white default, kecuali jika palet menentukan lain.
+
+        // Set text colors
         body.style.color = palette.textColor;
-        navbar.querySelector('span').style.color = palette.textColor; // Nama di navbar
+        navbar.querySelector('span').style.color = palette.textColor;
         document.querySelectorAll('a').forEach(link => {
-          if (!link.classList.contains('hover:text-teal-400') && !link.classList.contains('text-teal-400')) {
-            link.style.color = palette.textColor; // Untuk link yang tidak punya warna spesifik
+          if (!link.classList.contains('hover:text-teal-400') && !link.classList.contains('text-teal-400') && !link.classList.contains('text-blue-600')) {
+            link.style.color = palette.textColor;
           }
         });
         document.querySelectorAll('h1, h2, h3').forEach(heading => {
           heading.style.color = palette.textColor;
         });
         document.querySelectorAll('p').forEach(p => {
-          if (!p.classList.contains('text-slate-400')) { // Jangan ubah teks italic kecil
+          if (!p.classList.contains('text-slate-400') && !p.classList.contains('text-gray-400') && !p.classList.contains('text-gray-600') && !p.classList.contains('text-blue-600')) {
             p.style.color = palette.textColor;
           }
         });
         document.querySelectorAll('.text-gray-400').forEach(p => {
-          if (!p.closest('.theme-picker')) { // Jangan ubah teks italic kecil pada theme picker
+          if (!p.closest('.theme-picker')) {
             p.style.color = palette.textColor;
           }
         });
+        document.querySelectorAll('.text-slate-300').forEach(p => { // Ensure slate-300 adapts
+          p.style.color = palette.textColor;
+        });
+        document.querySelectorAll('.text-gray-600').forEach(p => { // Ensure gray-600 adapts
+          p.style.color = palette.textColor;
+        });
 
 
-        // Update link colors for dynamic changes (optional, adjust as needed)
+        // Update link colors for dynamic changes
         document.querySelectorAll('a.hover\\:text-teal-400').forEach(link => {
-          link.style.color = palette.textColor; // Set warna dasar link navigasi
-          link.onmouseover = () => link.style.color = 'teal'; // Kembali ke teal saat hover
-          link.onmouseout = () => link.style.color = palette.textColor; // Kembali ke warna tema saat mouse out
+          link.style.color = palette.textColor;
+          link.onmouseover = () => link.style.color = 'teal';
+          link.onmouseout = () => link.style.color = palette.textColor;
         });
         document.querySelectorAll('.text-teal-400').forEach(link => {
-          link.style.color = 'teal'; // Memastikan link seperti "Visit Website" tetap teal
+          link.style.color = 'teal';
         });
+        document.querySelectorAll('.text-blue-400').forEach(link => { // For "Selengkapnya" button
+          link.style.color = 'lightblue'; // Or a color that contrasts well
+        });
+        document.querySelectorAll('.text-blue-600').forEach(link => { // For email link
+          link.style.color = 'lightblue'; // Or a color that contrasts well
+        });
+
 
         document.querySelectorAll('.border.border-white').forEach(button => {
           button.style.borderColor = palette.textColor;
