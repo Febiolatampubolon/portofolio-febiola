@@ -20,33 +20,26 @@
 
   <!-- Konten Utama -->
   <main class="container mx-auto px-4 py-12 space-y-20">
-
-    <!-- Bagian Atas -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
       <!-- Slider Gambar -->
-<div class="swiper w-full rounded-xl shadow-lg">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="img/TaskVisit.png" alt="Task Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/DirectVisit.png" alt="Direct Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/HomePage.png" alt="Home Page" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="img/ListDataMaster.png" alt="List Data Master" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-  </div>
-</div>
-
-
-        <!-- Tombol Navigasi -->
+      <div class="swiper w-full rounded-xl shadow-lg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/TaskVisit.png" alt="Task Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/DirectVisit.png" alt="Direct Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/HomePage.png" alt="Home Page" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/ListDataMaster.png" alt="List Data Master" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+          </div>
+        </div>
         <div class="swiper-button-next text-white"></div>
         <div class="swiper-button-prev text-white"></div>
-        <!-- Pagination (opsional) -->
         <div class="swiper-pagination mt-4"></div>
       </div>
 
@@ -56,20 +49,21 @@
         <p class="text-gray-300 mb-4 text-sm">
           SUFI adalah aplikasi manajemen inventaris barang yang meliputi fitur peminjaman, pengembalian, dan pelaporan barang. Proyek ini dikembangkan untuk membantu manajemen inventaris barang yang efisien di PT Suzuki Finance Indonesia.
         </p>
-        
+        <p class="text-sm italic text-slate-500 mb-4">
+          Proyek ini merupakan bagian dari kerja praktik mahasiswa yang berlangsung selama 10 minggu di PT Suzuki Finance Indonesia, dengan fokus pada pengembangan modul <strong>SMILE – SUFI One</strong>.
+        </p>
         <ul class="list-disc text-gray-400 pl-6 text-sm space-y-2">
-          <li><strong>Peran:</strong> Frontend Developer, UI/UX Designer</li>
+          <li><strong>Peran:</strong> Mobile Developer</li>
           <li><strong>Kontribusi:</strong> 
             <ul class="list-disc pl-6 space-y-1">
-              <li>Merancang antarmuka pengguna yang responsif dan mudah digunakan.</li>
-              <li>Mengembangkan fitur peminjaman dan pengembalian barang menggunakan Flutter.</li>
-              <li>Menyusun desain pengalaman pengguna (UX) untuk aplikasi berbasis web dan mobile.</li>
+              <li>Mengembangkan fitur peminjaman dan pengembalian barang menggunakan Flutter sebagai mobile developer.</li>
+              <li>Berperan aktif dalam membangun logika tampilan dan interaksi pengguna berbasis mobile.</li>
+              <li>Berkolaborasi dengan backend Laravel untuk integrasi API dan sinkronisasi data inventaris.</li>
             </ul>
           </li>
           <li><strong>Teknologi:</strong> Flutter, Laravel, MySQL, GitHub</li>
           <li><strong>Fitur:</strong> Peminjaman Barang, Pengembalian Barang, Laporan Inventaris</li>
         </ul>
-
         <div class="mt-6">
           <a href="https://github.com/twinklestar-o/sufi-one-smile-module.git" target="_blank" class="inline-block bg-teal-500 px-6 py-2 rounded-lg font-medium hover:bg-teal-600 transition">
             Lihat Repository
@@ -108,12 +102,12 @@
 
         <h3 class="text-2xl font-semibold mt-6 mb-2">👩‍💻 Peran Saya</h3>
         <p class="mb-4 text-justify">
-          Sebagai <strong>Frontend Developer</strong> dan <strong>UI/UX Designer</strong>, saya bertanggung jawab untuk merancang dan mengembangkan antarmuka pengguna yang responsif dan intuitif menggunakan Flutter.
+          Sebagai <strong>Mobile Developer</strong> dalam tim kerja praktik di PT Suzuki Finance Indonesia, saya bertanggung jawab untuk mengembangkan aplikasi mobile menggunakan Flutter, khususnya untuk fitur peminjaman dan pengembalian barang. Saya juga berkoordinasi secara rutin dengan tim backend untuk memastikan integrasi API berjalan dengan baik.
         </p>
         <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Mendesain antarmuka aplikasi dengan fokus pada pengalaman pengguna yang mulus.</li>
-          <li>Mengembangkan fitur peminjaman dan pengembalian barang dengan Flutter.</li>
-          <li>Berkoordinasi dengan tim backend untuk mengintegrasikan aplikasi frontend dengan API Laravel.</li>
+          <li>Mendesain alur tampilan aplikasi dengan fokus pada pengalaman pengguna.</li>
+          <li>Mengimplementasikan logika fitur utama seperti peminjaman dan pengembalian barang.</li>
+          <li>Melakukan integrasi data dengan API Laravel.</li>
         </ul>
 
         <h3 class="text-2xl font-semibold mt-6 mb-2">📌 Manfaat Proyek</h3>
@@ -148,7 +142,7 @@
     </div>
   </footer>
 
-  <!-- Swiper Script di bagian paling akhir -->
+  <!-- Swiper Script -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
