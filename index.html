@@ -6,6 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Febiola | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Custom scrollbar for a cleaner look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #475569;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748b;
+    }
+  </style>
 </head>
 
 <body class="bg-[#0f172a] text-white">
@@ -47,32 +67,69 @@
     <div class="flex flex-col md:flex-row items-center justify-around gap-8">
       
       <!-- Foto Profil -->
-      <div class="text-center">
-        <img src="img/me.jpg" alt="Foto Febiola" class="w-48 h-60 object-cover rounded-md shadow-md" />
-        <h3 class="mt-4 font-bold text-lg">Personalize Theme</h3>
-        <div class="flex justify-center gap-4 mt-2">
-          <div class="w-6 h-6 rounded-full bg-white border"></div>
-          <div class="w-6 h-6 rounded-full bg-[#0f172a] border"></div>
-          <div class="w-6 h-6 rounded-full bg-[#7b8a6d] border"></div>
-          <div class="w-6 h-6 rounded-full bg-[#69445e] border"></div>
+      
+        <div class="text-center md:w-1/3">
+          <img src="img/me.jpg" alt="Foto Febiola" class="w-48 h-60 object-cover rounded-md shadow-md mx-auto" />
+          <h3 class="mt-4 font-bold text-lg">Personalize Theme</h3>
+          <div class="flex justify-center gap-4 mt-2">
+            <div class="w-6 h-6 rounded-full bg-[#0f172a] border border-slate-400 cursor-pointer theme-picker" data-color="#0f172a"></div>
+            <div class="w-6 h-6 rounded-full bg-white border border-slate-400 cursor-pointer theme-picker" data-color="white"></div>
+            <div class="w-6 h-6 rounded-full bg-[#7b8a6d] border border-slate-400 cursor-pointer theme-picker" data-color="#7b8a6d"></div>
+            <div class="w-6 h-6 rounded-full bg-[#69445e] border border-slate-400 cursor-pointer theme-picker" data-color="#69445e"></div>
+            <div class="w-6 h-6 rounded-full bg-[#a382a8] border border-slate-400 cursor-pointer theme-picker" data-color="#a382a8"></div>
+          </div>
+          <p class="text-sm text-slate-400 italic mt-2">
+            *Theme settings will be saved for your next visit
+          </p>
         </div>
-        <p class="text-sm text-slate-400 italic mt-2">
-          *Theme settings will be saved for your next visit
-        </p>
-      </div>
 
-      <!-- Deskripsi -->
-      <div class="bg-[#111827] p-6 rounded-md w-full md:w-1/2">
-        <h2 class="text-2xl font-extrabold mb-3">What I Do</h2>
-        <p class="text-slate-300 font-mono leading-relaxed">
-          I am an IT Enthusiast that currently work as Software Engineer.
-          I have a huge interest in IT field especially in application & website development.
-        </p>
-      </div>
+        <div class="bg-[#111827] p-6 rounded-md w-full md:w-2/3 border border-slate-600 transition-colors duration-300">
+          <h2 class="text-2xl font-extrabold mb-3">What I Do</h2>
+          <p class="text-slate-300 font-mono leading-relaxed">
+            I am an IT Enthusiast that currently work as Software Engineer.
+            I have a huge interest in IT field especially in application & website development.
+          </p>
+        </div>
 
+      </div>
     </div>
-  </div>
 </section>
+
+<section class="py-20 px-6 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-12">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">More about me</h2>
+        <p class="text-slate-300 mb-6 leading-relaxed">
+          I'm using several programming languages such as Java, PHP, JavaScript, and SQL to build apps and websites.
+        </p>
+        <p class="text-slate-300 mb-8 leading-relaxed">
+          I'm able to work independently or in a team, responsible, and learn new things quickly.
+        </p>
+
+        <h2 class="text-3xl font-bold mb-4">Top Expertise</h2>
+        <div class="grid grid-cols-2 gap-4 text-slate-300 text-lg">
+          <div>HTML</div>
+          <div>SQL</div>
+          <div>CSS</div>
+          <div>Java</div>
+          <div>JavaScript</div>
+          <div>Phyton</div>
+          <div>Photography</div>
+          <div>PHP</div>
+          <div>Videography</div>
+          <div>Laravel</div>
+        </div>
+        <a href="https://drive.google.com/uc?export=view&id=12jmXQ5eKVpaaZK1TJuRyjm76mDbYDWSY" target="_blank" class="mt-8 inline-block bg-transparent border border-white text-white py-2 px-6 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
+          Download Resume
+        </a>
+      </div>
+      <div class="md:w-1/2 flex flex-col items-center">
+        <img src="https://via.placeholder.com/400x300/1e293b/ffffff?text=Your+Landscape+Image" alt="Landscape" class="w-full h-auto object-cover rounded-lg shadow-lg mb-8" />
+        <h3 class="text-2xl font-bold mb-4">Find me on Linktree below</h3>
+        <a href="https://linktr.ee/febiolatampubolon" target="_blank" class="text-teal-400 hover:underline text-lg">linktr.ee/febiolatampubolon</a>
+      </div>
+    </div>
+  </section>
 
 
   <!-- Project Section -->
@@ -226,6 +283,156 @@
     </div>
   </div>
 </section>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const themePickers = document.querySelectorAll('.theme-picker');
+      const body = document.body;
+      const navbar = document.querySelector('nav');
+      const sections = document.querySelectorAll('section');
+      const footer = document.querySelector('footer');
+      const heroCard = document.querySelector('.max-w-5xl');
+      const whatIDoCard = document.querySelector('.bg-[#111827]');
+      const projectCards = document.querySelectorAll('.project-card'); // Menggunakan class baru
+
+      // Definisikan palet warna untuk setiap tema
+      // Anda bisa menyesuaikan warna ini agar sesuai dengan preferensi 'elegan' Anda
+      const themePalettes = {
+        '#0f172a': { // Tema default (dark blue)
+          bg: '#0f172a',
+          cardBg1: '#1f2937', // Untuk heroCard, projectCard
+          cardBg2: '#111827', // Untuk whatIDoCard
+          borderColor: '#475569',
+          textColor: 'white',
+          // Anda bisa menambahkan warna lain di sini (misal: text-teal-400) jika ingin berubah juga
+        },
+        'white': { // Tema putih
+          bg: '#f8fafc', // Hampir putih
+          cardBg1: '#ffffff', // Putih terang
+          cardBg2: '#f1f5f9', // Abu-abu muda
+          borderColor: '#cbd5e1',
+          textColor: '#1e293b', // Dark slate untuk teks
+        },
+        '#7b8a6d': { // Tema hijau zaitun
+          bg: '#7b8a6d',
+          cardBg1: '#94a887',
+          cardBg2: '#879e7a',
+          borderColor: '#b6c2ac',
+          textColor: '#f8fafc', // Teks putih atau off-white
+        },
+        '#69445e': { // Tema ungu tua
+          bg: '#69445e',
+          cardBg1: '#865e77',
+          cardBg2: '#7a516e',
+          borderColor: '#a37190',
+          textColor: '#f8fafc',
+        },
+        '#a382a8': { // Tema lavender/ungu muda (warna ke-5)
+          bg: '#a382a8',
+          cardBg1: '#c09ec2',
+          cardBg2: '#b291b5',
+          borderColor: '#dfc7e0',
+          textColor: '#1e293b', // Teks dark slate
+        }
+      };
+
+      // Fungsi untuk mengatur tema
+      function setTheme(colorKey) {
+        const palette = themePalettes[colorKey];
+
+        // Set background colors for main elements
+        body.style.backgroundColor = palette.bg;
+        navbar.style.backgroundColor = palette.bg;
+        footer.style.backgroundColor = palette.bg;
+
+        sections.forEach(section => {
+          section.style.backgroundColor = palette.bg;
+        });
+
+        // Set background colors for specific cards
+        heroCard.style.backgroundColor = palette.cardBg1;
+        whatIDoCard.style.backgroundColor = palette.cardBg2;
+
+        projectCards.forEach(card => {
+          card.style.backgroundColor = palette.cardBg1;
+          card.style.borderColor = palette.borderColor; // Ubah warna border juga
+        });
+
+        // Set border colors for general elements
+        navbar.style.borderColor = palette.borderColor;
+        heroCard.style.borderColor = palette.borderColor;
+        whatIDoCard.style.borderColor = palette.borderColor;
+        footer.style.borderColor = palette.borderColor;
+
+        // Set text colors (opsional, tergantung seberapa banyak yang ingin diubah)
+        // Jika Anda ingin mengubah warna teks global, Anda bisa menambahkan kelas Tailwind
+        // yang relevan pada <body> berdasarkan tema yang dipilih.
+        // Untuk saat ini, kita biarkan text-white default, kecuali jika palet menentukan lain.
+        body.style.color = palette.textColor;
+        navbar.querySelector('span').style.color = palette.textColor; // Nama di navbar
+        document.querySelectorAll('a').forEach(link => {
+            if (!link.classList.contains('hover:text-teal-400') && !link.classList.contains('text-teal-400')) {
+                link.style.color = palette.textColor; // Untuk link yang tidak punya warna spesifik
+            }
+        });
+        document.querySelectorAll('h1, h2, h3').forEach(heading => {
+            heading.style.color = palette.textColor;
+        });
+        document.querySelectorAll('p').forEach(p => {
+            if (!p.classList.contains('text-slate-400')) { // Jangan ubah teks italic kecil
+                p.style.color = palette.textColor;
+            }
+        });
+        document.querySelectorAll('.text-gray-400').forEach(p => {
+             if (!p.closest('.theme-picker')) { // Jangan ubah teks italic kecil pada theme picker
+                 p.style.color = palette.textColor;
+             }
+         });
+
+
+        // Update link colors for dynamic changes (optional, adjust as needed)
+        document.querySelectorAll('a.hover\\:text-teal-400').forEach(link => {
+            link.style.color = palette.textColor; // Set warna dasar link navigasi
+            link.onmouseover = () => link.style.color = 'teal'; // Kembali ke teal saat hover
+            link.onmouseout = () => link.style.color = palette.textColor; // Kembali ke warna tema saat mouse out
+        });
+        document.querySelectorAll('.text-teal-400').forEach(link => {
+            link.style.color = 'teal'; // Memastikan link seperti "Visit Website" tetap teal
+        });
+
+        document.querySelectorAll('.border.border-white').forEach(button => {
+            button.style.borderColor = palette.textColor;
+            button.style.color = palette.textColor;
+            button.onmouseover = () => {
+                button.style.backgroundColor = palette.textColor;
+                button.style.color = palette.bg;
+            };
+            button.onmouseout = () => {
+                button.style.backgroundColor = 'transparent';
+                button.style.color = palette.textColor;
+            };
+        });
+
+      }
+
+      // Load saved theme from localStorage or set default
+      const savedTheme = localStorage.getItem('portfolioTheme');
+      if (savedTheme && themePalettes.hasOwnProperty(savedTheme)) {
+        setTheme(savedTheme);
+      } else {
+        setTheme('#0f172a'); // Default theme
+      }
+
+      // Add event listeners to theme pickers
+      themePickers.forEach(picker => {
+        picker.addEventListener('click', () => {
+          const color = picker.dataset.color;
+          setTheme(color);
+          localStorage.setItem('portfolioTheme', color);
+        });
+      });
+    });
+  </script>
 
 <section id="contact" class="bg-slate-900 text-white py-20 px-6">
   <div class="max-w-xl mx-auto text-center">
