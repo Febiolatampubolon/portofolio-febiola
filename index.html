@@ -113,23 +113,21 @@
           <div>CSS</div>
           <div>Java</div>
           <div>JavaScript</div>
-          <div>Phyton</div>
+           <div>Python</div> 
           <div>Photography</div>
           <div>PHP</div>
           <div>Videography</div>
           <div>Laravel</div>
         </div>
-        <a href="https://drive.google.com/uc?export=view&id=12jmXQ5eKVpaaZK1TJuRyjm76mDbYDWSY" target="_blank" class="mt-8 inline-block bg-transparent border border-white text-white py-2 px-6 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
-          Download Resume
-        </a>
-      </div>
-      <div class="md:w-1/2 flex flex-col items-center">
-        <img src="https://via.placeholder.com/400x300/1e293b/ffffff?text=Your+Landscape+Image" alt="Landscape" class="w-full h-auto object-cover rounded-lg shadow-lg mb-8" />
-        <h3 class="text-2xl font-bold mb-4">Find me on Linktree below</h3>
-        <a href="https://linktr.ee/febiolatampubolon" target="_blank" class="text-teal-400 hover:underline text-lg">linktr.ee/febiolatampubolon</a>
-      </div>
-    </div>
-  </section>
+     <a href="https://drive.google.com/file/d/1iJDeEgP8MXcbPzTBfvi-MXYrIACXHJZO/view?usp=sharing" target="_blank" class="mt-8 inline-block bg-transparent border border-white text-white py-2 px-6 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
+  Download Resume
+</a>
+</div>
+
+<div class="md:w-1/2 flex flex-col items-center">
+  <img src="img/landscape.jpg" alt="Landscape" class="w-full h-auto object-cover rounded-lg shadow-lg mb-8" />
+</div>
+
 
 
   <!-- Project Section -->
@@ -147,7 +145,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         <!-- Project SIMBA -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+       <div class="project-card bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+
           <a href="simba-detail.html" target="_blank">
             <img src="img/simba.jpeg" alt="SIMBA Project" class="w-full h-48 object-cover cursor-pointer">
           </a>
@@ -168,7 +167,8 @@
         </div>
 
         <!-- Project SUFI-One -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+        <div class="project-card bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+
           <a href="sufi-detail.html" target="_blank">
             <img src="img/Suzuki.jpg" alt="SUFI Project" class="w-full h-48 object-cover cursor-pointer">
           </a>
@@ -189,7 +189,8 @@
         </div>
 
         <!-- Project SITA -->
-        <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+        <div class="project-card bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+
           <a href="sita-detail.html" target="_blank">
             <img src="img/sita.jpeg" alt="SITA Project" class="w-full h-48 object-cover cursor-pointer">
           </a>
@@ -290,7 +291,7 @@
       const body = document.body;
       const navbar = document.querySelector('nav');
       const sections = document.querySelectorAll('section');
-      const footer = document.querySelector('footer');
+      const footer = document.getElementById('footer');
       const heroCard = document.querySelector('.max-w-5xl');
       const whatIDoCard = document.querySelector('.bg-[#111827]');
       const projectCards = document.querySelectorAll('.project-card'); // Menggunakan class baru
@@ -348,6 +349,11 @@
         sections.forEach(section => {
           section.style.backgroundColor = palette.bg;
         });
+
+        footer.style.backgroundColor = palette.bg;
+        footer.style.borderColor = palette.borderColor;
+        footer.style.color = palette.textColor;
+
 
         // Set background colors for specific cards
         heroCard.style.backgroundColor = palette.cardBg1;
@@ -467,7 +473,7 @@
 </section>
 
 <!-- Kontak -->
-<section id="contact" class="py-20 bg-gradient-to-b from-white to-slate-100">
+<section id="contact-form" class="bg-slate-900 text-white py-20 px-6">
   <div class="container mx-auto px-6 md:w-1/2 text-center">
     <h2 class="text-4xl font-bold text-slate-800 mb-4">Kontak</h2>
     <div class="mx-auto w-24 h-1 bg-teal-500 rounded-full mb-6"></div>
@@ -485,11 +491,9 @@
   </div>
 </section>
 
-<!-- Tambahkan Font Awesome di head jika belum -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <!-- Footer -->
-<footer class="bg-slate-800 text-gray-400 py-6 mt-12">
+<footer id="footer" class="bg-slate-800 text-gray-400 py-6 mt-12">
   <div class="container mx-auto px-4">
     <!-- Ikon Sosial Media -->
     <div class="flex flex-wrap justify-center gap-6 mb-4 text-2xl">
