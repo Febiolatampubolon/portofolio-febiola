@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detail Proyek Mobile Smile | Febiola</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -20,51 +20,62 @@
   </style>
 </head>
 <body class="bg-slate-900 text-white font-sans flex flex-col min-h-screen">
+
+  <!-- Header -->
   <header class="bg-slate-800 py-6 px-4 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-white">Detail Proyek: <span class="text-teal-400">SUFI ONE - Smile</span></h1>
-      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">&larr; Kembali ke Portofolio</a>
+      <h1 class="text-2xl font-bold text-white">
+        Detail Proyek: <span class="text-teal-400">SUFI ONE - Smile</span>
+      </h1>
+      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">
+        &larr; Kembali ke Portofolio
+      </a>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="container mx-auto px-4 py-12 flex-grow">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-      <!-- Gambar Statis di Luar Swiper -->
-<div class="space-y-6">
-  <img src="./img/HomePage.png" alt="Tampilan Smile - Home Page" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
-  <img src="./img/DirectVisit.png" alt="Tampilan Smile - Direct Visit" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
-  <img src="./img/TaskVisit.png" alt="Tampilan Smile - Task Visit" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
-  <img src="./img/ListDataMaster.png" alt="Tampilan Smile - Data Master" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
-</div>
 
-<!-- Swiper Gallery -->
-<div class="swiper swiper-container w-full rounded-xl shadow-lg mt-6">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="./img/smile_1.png" alt="Halaman Direct Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/smile_2.png" alt="Halaman Task Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/smile_3.png" alt="Halaman History Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/smile_4.png" alt="Halaman Upload Bukti" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-  </div>
-  <!-- Navigasi & Pagination -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination mt-4"></div>
-</div>
+      <!-- Gambar Proyek -->
+      <div class="space-y-6">
+        <!-- Gambar Statis -->
+        <img src="./img/HomePage.png" alt="Home Page" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+        <img src="./img/DirectVisit.png" alt="Direct Visit" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+        <img src="./img/TaskVisit.png" alt="Task Visit" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+        <img src="./img/ListDataMaster.png" alt="Data Master" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
 
+        <!-- Swiper Gallery -->
+        <div class="swiper swiper-container w-full rounded-xl shadow-lg mt-6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/smile_1.png" alt="Direct Visit Detail" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/smile_2.png" alt="Task Visit Detail" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/smile_3.png" alt="History Visit Detail" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/smile_4.png" alt="Upload Bukti Kunjungan" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
 
       <!-- Informasi Proyek -->
       <div>
         <h2 class="text-3xl font-bold mb-4 text-teal-400">Mobile Smile (Sistem Manajemen Kunjungan Dealer)</h2>
-        <p class="text-gray-300 mb-4 text-sm">Mobile Smile adalah aplikasi mobile yang dirancang untuk mempermudah dan mendokumentasikan proses kunjungan sales/marketing ke dealer. Aplikasi ini mendukung fitur-fitur seperti pencatatan kunjungan langsung (Direct Visit), pengelolaan tugas kunjungan (Task Visit), dan riwayat kunjungan (History Visit), serta data master yang relevan untuk PT Suzuki Finance Indonesia.</p>
-        <p class="text-sm italic text-slate-500 mb-4">Proyek ini merupakan bagian dari pengembangan internal di PT Suzuki Finance Indonesia, dengan fokus pada peningkatan efisiensi operasional kunjungan lapangan.</p>
+        <p class="text-gray-300 mb-4 text-sm">
+          Mobile Smile adalah aplikasi mobile yang dirancang untuk mempermudah dan mendokumentasikan proses kunjungan sales/marketing ke dealer. Aplikasi ini mendukung fitur-fitur seperti pencatatan kunjungan langsung (Direct Visit), pengelolaan tugas kunjungan (Task Visit), dan riwayat kunjungan (History Visit), serta data master yang relevan untuk PT Suzuki Finance Indonesia.
+        </p>
+        <p class="text-sm italic text-slate-500 mb-4">
+          Proyek ini merupakan bagian dari pengembangan internal di PT Suzuki Finance Indonesia, dengan fokus pada peningkatan efisiensi operasional kunjungan lapangan.
+        </p>
         <ul class="list-disc text-gray-400 pl-6 text-sm space-y-2">
           <li><strong>Peran:</strong> Mobile Developer</li>
           <li><strong>Kontribusi:</strong>
@@ -79,12 +90,15 @@
           <li><strong>Fitur:</strong> Direct Visit, Task Visit, History Visit, Data Master, Geolocation Tracking, Photo Upload</li>
         </ul>
         <div class="mt-6">
-          <a href="https://github.com/twinklestar-o/sufi-one-smile-module.git" target="_blank" class="inline-block bg-teal-500 px-6 py-2 rounded-lg font-medium hover:bg-teal-600 transition">Lihat Repository</a>
+          <a href="https://github.com/twinklestar-o/sufi-one-smile-module.git" target="_blank" class="inline-block bg-teal-500 px-6 py-2 rounded-lg font-medium hover:bg-teal-600 transition">
+            Lihat Repository
+          </a>
         </div>
       </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-slate-800 text-gray-400 py-6 mt-12">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap justify-center gap-6 mb-4 text-2xl">
@@ -98,6 +112,7 @@
     </div>
   </footer>
 
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
