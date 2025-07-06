@@ -2,10 +2,10 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Detail Proyek Mobile Smile | Febiola</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -24,53 +24,51 @@
   <!-- Header -->
   <header class="bg-slate-800 py-6 px-4 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-white">
-        Detail Proyek: <span class="text-teal-400">SUFI ONE - Smile</span>
-      </h1>
-      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">
-        &larr; Kembali ke Portofolio
-      </a>
+      <h1 class="text-2xl font-bold">Detail Proyek: <span class="text-teal-400">SUFI ONE - Smile</span></h1>
+      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">← Kembali ke Portofolio</a>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <!-- Ganti bagian ini di <main> -->
-<div class="swiper swiper-container w-full rounded-xl shadow-lg mt-6">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="./img/HomePage.png" alt="Home Page" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/DirectVisit.png" alt="Direct Visit" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/TaskVisit.png" alt="Task Visit" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/ListDataMaster.png" alt="Data Master" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/smile_1.png" alt="Detail Direct Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/smile_2.png" alt="Detail Task Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/smile_3.png" alt="Detail History Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-    <div class="swiper-slide">
-      <img src="./img/smile_4.png" alt="Upload Bukti" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
-    </div>
-  </div>
+  <!-- Main -->
+  <main class="container mx-auto px-4 py-12 flex-grow">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
 
-  <!-- Navigasi & Pagination -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination mt-4"></div>
-</div>
+      <!-- Swiper Gallery -->
+      <div>
+        <div class="swiper swiper-container w-full rounded-xl shadow-lg">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/HomePage.png" alt="Home Page" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/DirectVisit.png" alt="Direct Visit" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/TaskVisit.png" alt="Task Visit" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/ListDataMaster.png" alt="Data Master" class="w-full h-auto max-h-[400px] object-contain rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/smile_1.png" alt="Detail Direct Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/smile_2.png" alt="Detail Task Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/smile_3.png" alt="Detail History Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/smile_4.png" alt="Upload Bukti" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
 
-
-      <!-- Informasi Proyek -->
+      <!-- Deskripsi Proyek -->
       <div>
         <h2 class="text-3xl font-bold mb-4 text-teal-400">Mobile Smile (Sistem Manajemen Kunjungan Dealer)</h2>
         <p class="text-gray-300 mb-4 text-sm">
