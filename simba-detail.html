@@ -2,129 +2,111 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detail Proyek SIMBA | Febiola</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .swiper-button-next, .swiper-button-prev {
+      color: #fff;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #14b8a6;
+    }
+  </style>
 </head>
-<body class="bg-slate-900 text-white font-sans">
-
+<body class="bg-slate-900 text-white font-sans flex flex-col min-h-screen">
   <!-- Header -->
   <header class="bg-slate-800 py-6 px-4 shadow-md">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <h1 class="text-2xl font-bold text-white text-center md:text-left">Detail Proyek: <span class="text-teal-400">SIMBA</span></h1>
-      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline text-center md:text-right">← Kembali ke Portofolio</a>
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Detail Proyek: <span class="text-teal-400">SIMBA</span></h1>
+      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">← Kembali ke Portofolio</a>
     </div>
   </header>
 
-  <!-- Konten Utama -->
-  <main class="max-w-6xl mx-auto px-4 py-12 space-y-20">
-
-    <!-- Bagian Atas -->
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12 flex-grow">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-      
-      <!-- Gambar -->
-      <div class="w-full">
-        <img src="img/simba.jpeg" alt="Tampilan SIMBA" class="rounded-xl shadow-lg w-full h-auto object-cover"/>
+      <!-- Image & Swiper -->
+      <div class="space-y-6">
+        <img src="img/simba.jpeg" alt="Tampilan SIMBA" class="w-full h-auto max-h-[250px] object-contain rounded-xl shadow-md mx-auto" />
+        <!-- Swiper (optional - tambahkan jika punya lebih dari 1 gambar SIMBA) -->
+        <!--
+        <div class="swiper w-full rounded-xl shadow-lg">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/simba2.jpg" alt="Screenshot SIMBA 2" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+        -->
       </div>
 
-      <!-- Ringkasan Proyek -->
+      <!-- Deskripsi Proyek -->
       <div>
         <h2 class="text-3xl font-bold mb-4 text-teal-400">SIMBA (Sistem Informasi Monitoring Bimbingan Akademik)</h2>
         <p class="text-gray-300 mb-4 text-sm">
-          SIMBA merupakan aplikasi berbasis web yang dirancang untuk membantu proses perwalian, konseling, dan pemantauan pelanggaran mahasiswa.
+          SIMBA adalah aplikasi web yang mendukung kegiatan perwalian, konseling, dan pemantauan pelanggaran mahasiswa dalam lingkungan akademik.
         </p>
-        
+        <p class="text-sm italic text-slate-500 mb-4">
+          Sistem ini dikembangkan untuk meningkatkan transparansi, efisiensi, dan akuntabilitas dalam kegiatan bimbingan akademik.
+        </p>
         <ul class="list-disc text-gray-400 pl-6 text-sm space-y-2">
-          <li><strong>Peran:</strong> System Analyst, Developer</li>
-          <li><strong>Kontribusi:</strong> 
+          <li><strong>Peran:</strong> System Analyst & Developer</li>
+          <li><strong>Kontribusi:</strong>
             <ul class="list-disc pl-6 space-y-1">
-              <li>Menganalisis kebutuhan fungsional dan menulis dokumentasi teknis (SDD).</li>
-              <li>Merancang dan mengembangkan antarmuka pengguna untuk fitur-fitur SIMBA.</li>
-              <li>Mengintegrasikan antarmuka dengan backend menggunakan REST API Laravel.</li>
+              <li>Menganalisis kebutuhan sistem dan menyusun dokumen teknis (SDD).</li>
+              <li>Mengembangkan UI menggunakan Flutter dan integrasi API Laravel.</li>
+              <li>Kolaborasi dengan tim backend & QA untuk memastikan fungsionalitas berjalan optimal.</li>
             </ul>
           </li>
           <li><strong>Teknologi:</strong> Flutter, Laravel, MySQL, GitHub</li>
-          <li><strong>Fitur:</strong> Monitoring Konseling, Pelanggaran Mahasiswa, Status & Jadwal Perwalian, Berita Acara</li>
+          <li><strong>Fitur:</strong> Monitoring Konseling, Pelanggaran Mahasiswa, Jadwal Perwalian, Berita Acara</li>
         </ul>
-
         <div class="mt-6">
-          <a href="https://github.com/MariaNasution/SIMBA" target="_blank" class="inline-block bg-teal-500 px-6 py-2 rounded-lg font-medium hover:bg-teal-600 transition">
-            Lihat Repository
-          </a>
+          <a href="https://github.com/MariaNasution/SIMBA" target="_blank" class="inline-block bg-teal-500 px-6 py-2 rounded-lg font-medium hover:bg-teal-600 transition">Lihat Repository</a>
         </div>
       </div>
     </div>
-
-    <!-- Detail Lengkap -->
-    <section class="px-6 py-12 bg-white text-gray-800 rounded-xl shadow-lg">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4 text-center">Detail Proyek SIMBA</h2>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">🎯 Tujuan Sistem</h3>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Meningkatkan efektivitas proses perwalian dan konseling.</li>
-          <li>Menyediakan dokumentasi digital riwayat pelanggaran dan hasil konseling.</li>
-          <li>Mempermudah pengelolaan informasi mahasiswa oleh dosen dan bagian kemahasiswaan.</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">🛠️ Fitur Utama</h3>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Melihat status dan jadwal perwalian mahasiswa.</li>
-          <li>Melihat berita acara bimbingan dan riwayat pertemuan.</li>
-          <li>Manajemen pelanggaran dan riwayat konseling mahasiswa.</li>
-          <li>Request dan pengelolaan sesi konseling antara mahasiswa dan konselor.</li>
-          <li>Upload hasil konseling, notifikasi otomatis, dan dashboard akademik.</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">💻 Teknologi yang Digunakan</h3>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Frontend: Flutter</li>
-          <li>Backend: Laravel (PHP)</li>
-          <li>Database: MySQL</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">👩‍💻 Peran Saya</h3>
-        <p class="mb-4 text-justify">
-          Dalam proyek ini, saya bertanggung jawab sebagai <strong>System Analyst</strong> dan <strong>Developer</strong>.
-        </p>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Melakukan analisis kebutuhan sistem dan menyusun SDD secara lengkap.</li>
-          <li>Mengembangkan UI menggunakan Flutter dan menghubungkannya dengan API Laravel.</li>
-          <li>Berkoordinasi dengan tim backend dan QA untuk memastikan semua fitur berjalan baik.</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">📌 Manfaat Proyek</h3>
-        <p class="text-justify">
-          Dengan SIMBA, proses perwalian, konseling, dan pemantauan pelanggaran mahasiswa menjadi lebih terdokumentasi, transparan, dan dapat dipantau secara real-time. Sistem ini mendukung lingkungan kampus yang lebih terstruktur dan mendukung perkembangan mahasiswa.
-        </p>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
   <footer class="bg-slate-800 text-gray-400 py-6 mt-12">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap justify-center gap-6 mb-4 text-2xl">
-        <a href="https://github.com/Febiolatampubolon" target="_blank" class="hover:text-white transition">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/febiolatampubolon" target="_blank" class="hover:text-white transition">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/febiola_tampubolon" target="_blank" class="hover:text-white transition">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:tampubolonfebiola@gmail.com" class="hover:text-white transition">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://wa.me/6282261175885" target="_blank" class="hover:text-white transition">
-          <i class="fab fa-whatsapp"></i>
-        </a>
+        <a href="https://github.com/Febiolatampubolon" target="_blank" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/febiolatampubolon" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/febiola_tampubolon" target="_blank" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:tampubolonfebiola@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/6282261175885" target="_blank" class="hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
       </div>
       <p class="text-center text-sm">© 2025 Febiola Tampubolon.</p>
     </div>
   </footer>
 
+  <!-- Swiper JS (aktifkan jika menggunakan slider) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      }
+    });
+  </script>
 </body>
 </html>

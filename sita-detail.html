@@ -7,46 +7,46 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="bg-slate-900 text-white font-sans">
+<body class="bg-slate-900 text-white font-sans flex flex-col min-h-screen">
 
   <!-- Header -->
   <header class="bg-slate-800 py-6 px-4 shadow-md">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <h1 class="text-2xl font-bold text-white text-center md:text-left">Detail Proyek: <span class="text-teal-400">SITA</span></h1>
-      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline text-center md:text-right">← Kembali ke Portofolio</a>
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Detail Proyek: <span class="text-teal-400">SITA</span></h1>
+      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">← Kembali ke Portofolio</a>
     </div>
   </header>
 
-  <!-- Konten Utama -->
-  <main class="max-w-6xl mx-auto px-4 py-12 space-y-20">
-
-    <!-- Bagian Atas -->
+  <!-- Main -->
+  <main class="container mx-auto px-4 py-12 flex-grow">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+
       <!-- Gambar -->
-      <div class="w-full">
-        <img src="img/sita1.png" alt="Tampilan SITA" class="rounded-xl shadow-lg w-full h-auto object-cover"/>
+      <div class="space-y-6">
+        <img src="img/sita1.png" alt="Tampilan SITA" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
       </div>
 
-      <!-- Ringkasan Proyek -->
+      <!-- Deskripsi Proyek -->
       <div>
         <h2 class="text-3xl font-bold mb-4 text-teal-400">SITA (Sistem Informasi Tugas Akhir)</h2>
         <p class="text-gray-300 mb-4 text-sm">
-          SITA adalah platform berbasis web untuk mengelola proses tugas akhir mahasiswa, mulai dari pendaftaran, bimbingan, seminar, hingga sidang. Sistem ini membantu mempercepat dan merapikan alur kerja antara mahasiswa dan dosen pembimbing.
+          SITA adalah platform web untuk mengelola proses tugas akhir mahasiswa, dari pendaftaran, log bimbingan, seminar, hingga sidang. Aplikasi ini mempercepat dan merapikan alur kerja akademik tingkat akhir.
         </p>
-        
+        <p class="text-sm italic text-slate-500 mb-4">
+          Sistem ini dikembangkan untuk lingkungan akademik Institut Teknologi Del dan mendukung pengarsipan serta pemantauan kegiatan mahasiswa akhir.
+        </p>
         <ul class="list-disc text-gray-400 pl-6 text-sm space-y-2">
-          <li><strong>Peran:</strong> System Analyst, Developer</li>
-          <li><strong>Kontribusi:</strong> 
+          <li><strong>Peran:</strong> System Analyst & Developer</li>
+          <li><strong>Kontribusi:</strong>
             <ul class="list-disc pl-6 space-y-1">
-              <li>Menganalisis kebutuhan pengguna dan menyusun dokumentasi fungsional sistem.</li>
-              <li>Merancang dan mengembangkan tampilan frontend menggunakan Tailwind CSS dan React.</li>
-              <li>Mengintegrasikan API backend dan mengimplementasikan alur pendaftaran TA hingga sidang.</li>
+              <li>Menganalisis kebutuhan pengguna dan menyusun dokumentasi sistem.</li>
+              <li>Mengembangkan UI menggunakan ReactJS + Tailwind CSS.</li>
+              <li>Integrasi frontend dengan REST API Laravel.</li>
             </ul>
           </li>
-          <li><strong>Teknologi:</strong> ReactJS, Tailwind CSS, Vite, REST API, Laravel, MySQL, GitHub</li>
-          <li><strong>Fitur:</strong> Pendaftaran TA, Log Bimbingan, Penjadwalan Seminar & Sidang, Validasi Dokumen</li>
+          <li><strong>Teknologi:</strong> ReactJS, Tailwind CSS, Laravel, MySQL, GitHub</li>
+          <li><strong>Fitur:</strong> Pendaftaran TA, Log Bimbingan, Jadwal Seminar & Sidang, Validasi Dokumen</li>
         </ul>
-
         <div class="mt-6">
           <a href="https://github.com/william-napitupulu/SITA.git" target="_blank" class="inline-block bg-teal-500 px-6 py-2 rounded-lg font-medium hover:bg-teal-600 transition">
             Lihat Repository
@@ -54,68 +54,18 @@
         </div>
       </div>
     </div>
-
-    <!-- Detail Lengkap -->
-    <section class="px-6 py-12 bg-white text-gray-800 rounded-xl shadow-lg">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4 text-center">Detail Proyek SITA</h2>
-        <p class="mb-6 text-lg text-justify">
-          <strong>SITA (Sistem Informasi Tingkat Akhir)</strong> adalah aplikasi berbasis website yang dirancang untuk membantu proses pendaftaran dan pengelolaan mahasiswa tingkat akhir di Institut Teknologi Del.
-        </p>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">🎯 Tujuan Sistem</h3>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Memudahkan mahasiswa mendaftar sebagai mahasiswa tingkat akhir.</li>
-          <li>Menyediakan platform bagi pembimbing untuk menyetujui pendaftaran dan memantau kemajuan mahasiswa.</li>
-          <li>Menjadi sarana monitoring dan dokumentasi kegiatan akademik tingkat akhir oleh Program Studi.</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">🛠️ Fitur Utama</h3>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Formulir pendaftaran tingkat akhir.</li>
-          <li>Notifikasi status pendaftaran dan persetujuan dosen pembimbing.</li>
-          <li>Upload dokumen (proposal, logbook, laporan akhir, dll).</li>
-          <li>Dashboard mahasiswa dan dosen pembimbing untuk melihat progres dan catatan bimbingan.</li>
-          <li>Persetujuan pembimbing terhadap setiap tahapan (proposal, laporan, seminar, sidang).</li>
-          <li>Penjadwalan seminar dan sidang akhir.</li>
-          <li>Pengarsipan dokumen secara otomatis.</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">💻 Teknologi yang Digunakan</h3>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Frontend: ReactJS, Tailwind CSS, Vite</li>
-          <li>Backend: Laravel (PHP)</li>
-          <li>Database: MySQL</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">👩‍💻 Peran Saya</h3>
-        <p class="mb-4 text-justify">
-          Dalam proyek ini, saya bertanggung jawab sebagai <strong>System Analyst</strong> dan <strong>Developer</strong>.
-        </p>
-        <ul class="list-disc list-inside space-y-1 mb-6">
-          <li>Melakukan analisis kebutuhan pengguna dan membuat flow sistem pendaftaran TA.</li>
-          <li>Mengembangkan UI menggunakan ReactJS dan Tailwind CSS agar responsif di berbagai perangkat.</li>
-          <li>Berkoordinasi dengan tim backend untuk integrasi data dan fungsi sistem.</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-6 mb-2">📌 Manfaat Proyek</h3>
-        <p class="text-justify">
-          Dengan adanya SITA, proses tingkat akhir menjadi lebih terdokumentasi, terpantau, dan transparan. Baik mahasiswa maupun pembimbing dapat lebih mudah mengelola tugas dan tanggung jawab masing-masing dalam penyelesaian studi.
-        </p>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
   <footer class="bg-slate-800 text-gray-400 py-6 mt-12">
-    <div class="max-w-6xl mx-auto px-4">
+    <div class="container mx-auto px-4">
       <div class="flex flex-wrap justify-center gap-6 mb-4 text-2xl">
         <a href="https://github.com/Febiolatampubolon" target="_blank" class="hover:text-white transition"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/febiolatampubolon" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.instagram.com/febiola_tampubolon" target="_blank" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
         <a href="https://drive.google.com/uc?export=view&id=12jmXQ5eKVpaaZK1TJuRyjm76mDbYDWSY" target="_blank" class="hover:text-white transition" title="Lihat CV"><i class="fas fa-file-alt"></i></a>
-        <a href="mailto:tampubolonfebiola@gmail.com" class="hover:text-white transition" title="Kirim Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://wa.me/6282261175885" target="_blank" class="hover:text-white transition" title="Chat via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:tampubolonfebiola@gmail.com" class="hover:text-white transition"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/6282261175885" target="_blank" class="hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
       </div>
       <p class="text-center text-sm">© 2025 Febiola Tampubolon.</p>
     </div>
