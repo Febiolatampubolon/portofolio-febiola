@@ -23,32 +23,33 @@
   <header class="bg-slate-800 py-6 px-4 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold text-white">Detail Proyek: <span class="text-teal-400">SUFI ONE - Smile</span></h1>
-      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">← Kembali ke Portofolio</a>
+      <a href="index.html#portfolio" class="text-sm text-teal-400 hover:underline">&larr; Kembali ke Portofolio</a>
     </div>
   </header>
 
   <main class="container mx-auto px-4 py-12 flex-grow">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-      <div class="space-y-6">
-
       <!-- Gambar dan Galeri -->
-<div class="space-y-6">
-  <!-- Gambar utama -->
-  <img src="img/sita1.png" alt="Tampilan SITA" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+      <div class="space-y-6">
+        <img src="HomePage.png" alt="Tampilan Smile" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+        <img src="DirectVisit.png" alt="Tampilan Smile" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+        <img src="TaskVisit.png" alt="Tampilan Smile" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+        <img src="ListDataster.png" alt="Tampilan Smile" class="w-full h-auto max-h-[300px] object-contain rounded-xl shadow-md mx-auto" />
+       
+        <div class="swiper w-full rounded-xl shadow-lg">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/smile_1.png" alt="Halaman Direct Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
+            <div class="swiper-slide"><img src="img/smile_2.png" alt="Task Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
+            <div class="swiper-slide"><img src="img/smile_3.png" alt="History Visit" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
+            <div class="swiper-slide"><img src="img/smile_4.png" alt="Upload Bukti Kunjungan" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
 
-  <!-- Swiper Gallery -->
-  <div class="swiper w-full rounded-xl shadow-lg">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/sita2.png" alt="Halaman Pendaftaran" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
-      <div class="swiper-slide"><img src="img/sita3.png" alt="Dashboard Mahasiswa" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
-      <div class="swiper-slide"><img src="img/sita4.png" alt="Log Bimbingan" class="w-full h-auto max-h-[400px] object-cover rounded-xl mx-auto" /></div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination mt-4"></div>
-  </div>
-</div>
-
+      <!-- Informasi Proyek -->
       <div>
         <h2 class="text-3xl font-bold mb-4 text-teal-400">Mobile Smile (Sistem Manajemen Kunjungan Dealer)</h2>
         <p class="text-gray-300 mb-4 text-sm">Mobile Smile adalah aplikasi mobile yang dirancang untuk mempermudah dan mendokumentasikan proses kunjungan sales/marketing ke dealer. Aplikasi ini mendukung fitur-fitur seperti pencatatan kunjungan langsung (Direct Visit), pengelolaan tugas kunjungan (Task Visit), dan riwayat kunjungan (History Visit), serta data master yang relevan untuk PT Suzuki Finance Indonesia.</p>
@@ -58,9 +59,9 @@
           <li><strong>Kontribusi:</strong>
             <ul class="list-disc pl-6 space-y-1">
               <li>Mengembangkan dan memelihara fitur utama seperti Direct Visit, Task Visit, dan History Visit.</li>
-              <li>Membangun antarmuka pengguna yang intuitif dan responsif.</li>
-              <li>Integrasi API dengan backend Laravel untuk sinkronisasi data kunjungan dan dealer.</li>
-              <li>Implementasi lokasi GPS akurat dan upload foto sebagai bukti kunjungan.</li>
+              <li>Membangun antarmuka pengguna yang intuitif dan responsif menggunakan Flutter.</li>
+              <li>Mengintegrasikan frontend Flutter dengan backend Laravel untuk sinkronisasi data kunjungan dan dealer.</li>
+              <li>Menerapkan pelacakan lokasi GPS dan upload foto sebagai bukti kunjungan yang valid.</li>
             </ul>
           </li>
           <li><strong>Teknologi:</strong> Flutter, Laravel, MySQL, GitHub</li>
